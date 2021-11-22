@@ -32,7 +32,7 @@
    1500 - 1648 List Item 11
    1650 - 1798 List Item 12
    1800 - 1948 List Item 13
-   1949 - 2047 ...  Empty
+   1949 - 2047 ...  Reserved for other use
 */
 
 class ListItem
@@ -48,6 +48,7 @@ class ListItem
     uint8_t dueTimeRaw[8];
     uint64_t dueTime;
     uint8_t pointScoreRaw[2];
+    bool completed;
 };
 
 #endif

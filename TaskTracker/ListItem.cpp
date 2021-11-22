@@ -2,8 +2,10 @@
 
 ListItem::ListItem()
 {
-  // Initialize all the data to 0.
-  itemNumber = 0;
+  // Simply initialize all the data to 0.
+  // However, initialize itemNumber to 255 to 
+  // signify an empty list item.
+  itemNumber = 255;
   for (int i = 0; i < 128; i++)
   {
     itemName[i] = '\0';
@@ -19,4 +21,5 @@ ListItem::ListItem()
   }
   creationTime = 0;
   dueTime = 0;
+  completed = false;
 }
